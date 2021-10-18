@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    h2 Doctor #{doctor.name} 
+    if doctor.patients.length > 0
+        .alert.alert-info(role='alert') Doctor is healing for #{doctor.patients[0].name}
+
+    if doctor.patients.length == 0 
+        a.btn.btn-primary.disabled#done-patient(href='/doctor-room/'+doctor.id+'/done' role="button" aria-disabled="true" tabindex="-1") Done
+    else
+        a.btn.btn-primary#done-patient(href='/doctor-room/'+doctor.id+'/done' role="button" aria-disabled="true" tabindex="-1") Done
+
+    div
+        h2 Patients 
+        table.table
+            thead
+                tr
+                    th(scope='col') Number
+                    th(scope='col') Name
+                    th(scope='col') Age
+                    th(scope='col') Address
+                    th(scope='col') Diease
+            tbody
+                each patient,idx in doctor.patients 
+                    if idx == 0
+                        tr.table-active
+                            th(scope='row')= idx+1
+                            td= patient.name
+                            td= patient.age
+                            td= patient.address
+                            td= patient.disease
+                    else
+                        tr 
+                            th(scope='row')= idx+1
+                            td= patient.name
+                            td= patient.age
+                            td= patient.address
+                            td= patient.disease
+                // tr
+                //     th(scope='row') 2
+                //     td Trung
+                // tr
+                //     th(scope='row') 3
+                //     td Trung

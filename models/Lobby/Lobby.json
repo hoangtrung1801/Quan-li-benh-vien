@@ -1,0 +1,47 @@
+[
+  {
+    "name": "I",
+    "age": 73,
+    "address": "123 ho chi minh",
+    "diseaseId": "e1t24{ig2sgr8160",
+    "priority": "1",
+    "disease": "Nhồi máu cơ tim",
+    "id": "wl5C448w9r9hft(7"
+  },
+  {
+    "name": "J",
+    "age": 74,
+    "address": "123 ho chi minh",
+    "diseaseId": "e1t24{ig2sgr8160",
+    "priority": "1",
+    "disease": "Nhồi máu cơ tim",
+    "id": ".is94j4o}n61xbl9"
+  },
+  {
+    "name": "K",
+    "age": 75,
+    "address": "123 ho chi minh",
+    "diseaseId": "e1t24{ig2sgr8160",
+    "priority": "1",
+    "disease": "Nhồi máu cơ tim",
+    "id": "eq7815w3Ute4lra7"
+  },
+  {
+    "name": "A",
+    "age": "12",
+    "address": "650 Trần Cao Vân",
+    "diseaseId": "139vmr641pn3clp9",
+    "priority": "5",
+    "disease": "Covid 19",
+    "id": "U483{a1478ladUja"
+  },
+  {
+    "name": "B",
+    "age": "12",
+    "address": "650 Trần Cao Vân",
+    "diseaseId": "laepU21oe7ixbw34",
+    "priority": "19",
+    "disease": "Viêm amidan",
+    "id": "n37e389adlvcaa7e"
+  }
+]

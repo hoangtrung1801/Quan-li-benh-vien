@@ -2,7 +2,21 @@ const fs = require("fs");
 const generateId = require("../helper/generateId");
 const changeDataInObjects = require("../helper/changeDataInObjects");
 
-const { readFileSync, writeFileSync } = fs;
+const {readFileSync, writeFileSync} = fs;
+
+/*
+    Documentation :
+    + constructor(source) -> source : file .json store data of document
+    + allData -> return all data in document 
+    + create(data) -> push data in document 
+    + findById(id) -> find data by id
+    + update(id, data) -> update new data
+    + delete(id) -> delete data out of document
+    + pop_front() -> delete data on the top and that data
+    + pop_back() -> delete data on the last and return that data
+
+    id: auto generate 
+*/
 
 class Document {
     constructor(source) {
@@ -12,7 +26,7 @@ class Document {
         if (fs.existsSync(this.source)) {
             try {
                 const dataFile = JSON.parse(
-                    readFileSync(this.source, { encoding: "utf8" })
+                    readFileSync(this.source, {encoding: "utf8"})
                 );
                 this.documentData = dataFile;
             } catch {
@@ -27,12 +41,12 @@ class Document {
 
     readToFile() {
         this.documentData = JSON.parse(
-            readFileSync(this.source, { encoding: "utf8" })
+            readFileSync(this.source, {encoding: "utf8"})
         );
     }
 
     writeToFile(data) {
-        writeFileSync(this.source, JSON.stringify(this.documentData));
+        writeFileSync(this.source, JSON.stringify(this.documentData, null, 2));
     }
 
     get allData() {
@@ -58,8 +72,8 @@ class Document {
                     return resolve(this.documentData);
                 }
 
-                return reject("Datat must be an object");
-            }, 500);
+                return reject("Data must be an object");
+            }, 100);
         });
     }
 
@@ -74,7 +88,7 @@ class Document {
                 }
 
                 return resolve(doc[0]);
-            }, 500);
+            }, 100);
         });
     }
 
@@ -100,7 +114,7 @@ class Document {
                 } catch (err) {
                     reject(err);
                 }
-            }, 500);
+            }, 100);
         });
     }
 
@@ -117,8 +131,48 @@ class Document {
                 } catch (err) {
                     reject(err);
                 }
-            }, 500);
+            }, 100);
         });
+    }
+
+    pop_front() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                this.readToFile();
+
+                const data = this.documentData.shift();
+
+                this.writeToFile();
+
+                if (data) return resolve(data);
+                else return reject("Have no data in this document");
+            }, 100);
+        });
+    }
+
+    pop_back() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                this.readToFile();
+
+                const data = this.documentData.pop();
+
+                this.writeToFile();
+
+                if (data) return resolve(data);
+                else return reject("Have no data in this document");
+            }, 100);
+        });
+    }
+
+    isEmpty() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                this.readToFile();
+                if (this.documentData) return resolve(true);
+                return resolve(false);
+            }, 100)
+        })
     }
 }
 

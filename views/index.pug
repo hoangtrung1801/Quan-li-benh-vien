@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1 Welcome to hopistal
+    .row
+        .col-3 
+            a.btn.btn-primary(href='/lobby') Lobby
+        .col-3
+            a.btn.btn-primary(href='/reception') Reception 
+        .col-3
+            a.btn.btn-primary(href='/doctor-room') Doctor Room

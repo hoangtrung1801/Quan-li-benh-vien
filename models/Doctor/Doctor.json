@@ -1,0 +1,153 @@
+[
+  {
+    "name": "Trung",
+    "slotMax": "2",
+    "specializedId": "9ae).3kf}ee1u7)t",
+    "patients": [],
+    "id": "ooer024x0pquw}ir"
+  },
+  {
+    "name": "Tâm",
+    "slotMax": "2",
+    "specializedId": "9ae).3kf}ee1u7)t",
+    "patients": [],
+    "id": "(5kty1pnsj33z828"
+  },
+  {
+    "name": "Lý",
+    "slotMax": "3",
+    "specializedId": "rw6oeqrlk{i6ptj0",
+    "patients": [
+      {
+        "name": "Lê Kim Hoàng Trung",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "u8.owxb1d958mot{",
+        "priority": "20",
+        "disease": "Cảm xoàn",
+        "id": "8Uek1d74rsebraay"
+      }
+    ],
+    "id": "s6zxbge4jzas3398"
+  },
+  {
+    "name": "Hải",
+    "slotMax": "4",
+    "specializedId": "rw6oeqrlk{i6ptj0",
+    "patients": [],
+    "id": "e)q4p5exl)f8rm8t"
+  },
+  {
+    "name": "Trường",
+    "slotMax": "3",
+    "specializedId": "710s827d2xtg8r3i",
+    "patients": [
+      {
+        "name": "ZZZ",
+        "age": "12",
+        "address": "đà nẵng",
+        "diseaseId": "kewtC6rtsza3b758",
+        "priority": "15",
+        "disease": "Đau mắt đỏ",
+        "id": "28d6}5pad8weegl4"
+      },
+      {
+        "name": "AA",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "c64elneU1k4393e6",
+        "priority": "6",
+        "disease": "Đục thủy tinh thể",
+        "id": "68784Cax5t)43shu"
+      }
+    ],
+    "id": "2z1l4{f9qkvra7ll"
+  },
+  {
+    "name": "Minh",
+    "slotMax": "2",
+    "specializedId": "710s827d2xtg8r3i",
+    "patients": [
+      {
+        "name": "Lê Kim Hoàng Trung",
+        "age": "23",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "c64elneU1k4393e6",
+        "priority": "6",
+        "disease": "Đục thủy tinh thể",
+        "id": "pei(g}rnzlutepop"
+      },
+      {
+        "name": "Lê Kim Hoàng Trung",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "kewtC6rtsza3b758",
+        "priority": "15",
+        "disease": "Đau mắt đỏ",
+        "id": "6e37un1p380tkrfl"
+      }
+    ],
+    "id": "se4h6)twg91rjstn"
+  },
+  {
+    "name": "Nhân",
+    "slotMax": "4",
+    "specializedId": "7)51605pr9rl2i{d",
+    "patients": [
+      {
+        "name": "A",
+        "age": 65,
+        "address": "123 ho chi minh",
+        "diseaseId": "e1t24{ig2sgr8160",
+        "priority": "1",
+        "disease": "Nhồi máu cơ tim",
+        "id": "o41e6asserxqphz4"
+      },
+      {
+        "name": "B",
+        "age": 66,
+        "address": "123 ho chi minh",
+        "diseaseId": "e1t24{ig2sgr8160",
+        "priority": "1",
+        "disease": "Nhồi máu cơ tim",
+        "id": "szqex414peus3r4j"
+      },
+      {
+        "name": "G",
+        "age": 71,
+        "address": "123 ho chi minh",
+        "diseaseId": "e1t24{ig2sgr8160",
+        "priority": "1",
+        "disease": "Nhồi máu cơ tim",
+        "id": "wz{(U5srr{ep57eh"
+      }
+    ],
+    "id": "kwt60t21{}b5woCu"
+  },
+  {
+    "name": "Long",
+    "slotMax": "2",
+    "specializedId": "7)51605pr9rl2i{d",
+    "patients": [
+      {
+        "name": "Z",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "e1t24{ig2sgr8160",
+        "priority": "1",
+        "disease": "Nhồi máu cơ tim",
+        "id": "nee3rnv65(3neUar"
+      },
+      {
+        "name": "C",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "e1t24{ig2sgr8160",
+        "priority": "1",
+        "disease": "Nhồi máu cơ tim",
+        "id": "oop)c}dmbtr)k2gn"
+      }
+    ],
+    "id": "a385wstl5aa56U4r"
+  }
+]

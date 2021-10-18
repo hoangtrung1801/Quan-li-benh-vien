@@ -1,0 +1,55 @@
+extends layout
+
+block content
+    // if res.locals.err
+    //     // div.alert.alert-danger= locals.err
+    //     p error
+    div
+        form(method='post' action='/lobby/submit')
+            .mb-3
+                h2 Medical Register
+            .mb-3
+                label.form-label(for='name') Name
+                input.form-control(type='text' id='name' name='name')
+            .mb-3
+                label.form-label(for='age') Age
+                input.form-control(type='number' id='age' name='age')
+            .mb-3
+                label.form-label(for='address') Address
+                input.form-control(type='text' id='address' name='address')
+            .mb-3
+                // add data to kind of disease
+                label.form-label(for='diseaseId') Kind of disease
+                select.form-select(name='diseaseId' id='diseaseId')
+                    option(selected value="") Choose this one
+                    each disease in diseases
+                        option(value=disease.id)= disease.name
+            .mb-3
+                button.btn.btn-primary#medical-register(type='submit') Submit
+    if receptionIsFull 
+        .alert.alert-danger Reception is full
+    div
+        .row
+            .col
+                h2 List patient
+            .col 
+                if receptionIsFull || lobbyPatients.length == 0
+                    button.btn.btn-primary.disabled#next-lobby Next
+                else
+                    button.btn.btn-primary#next-lobby Next
+        table.table
+            thead
+                tr
+                    th(scope='col') Number
+                    th(scope='col') Name
+                    th(scope='col') Age
+                    th(scope='col') Address
+                    th(scope='col') Diease
+            tbody
+                each patient, idx in lobbyPatients
+                    tr 
+                        th(scope='row')= idx+1
+                        td= patient.name
+                        td= patient.age
+                        td= patient.address
+                        td= patient.disease

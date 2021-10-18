@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    form(method='post' action='/admin/diseases')
+        .mb-3
+            h2 Diseases 
+        .mb-3
+            label.form-label(for='name') Name
+            input.form-control(type='text' id='name' name='name' )
+        .mb-3
+            label.form-label(for='specializedId') Specialized Id
+            input.form-control(type='text' id='specializedId' name='specializedId')
+        .mb-3
+            label.form-label(for='priority') Priority
+            input.form-control(type='number' id='priority' name='priority')
+        .mb-3
+            button.btn.btn-primary(type='submit') Push data
+    form(method='post' action='/admin/doctor')
+        .mb-3
+            h2 Doctor 
+        .mb-3
+            label.form-label(for='name') Name
+            input.form-control(type='text' id='name' name='name' )
+        .mb-3
+            label.form-label(for='slotMax') slot max 
+            input.form-control(type='number' id='slotMax' name='slotMax')
+        .mb-3
+            label.form-label(for='specializedId') Specialized Id
+            input.form-control(type='text' id='specializedId' name='specializedId')
+        .mb-3
+            button.btn.btn-primary(type='submit') Push data

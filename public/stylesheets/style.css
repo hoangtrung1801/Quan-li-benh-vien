@@ -1,8 +1,13 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.reception-doctor {
+    height: 200px;
 }
 
-a {
-  color: #00B7FF;
+.doctor-room li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.doctor-room a {
+    color: currentColor;
+    text-decoration: none;
 }

@@ -1,0 +1,32 @@
+extends layout 
+
+block content
+    h2 Reception
+    // .alert.alert-info(role='alert') Patient was moved into Doctor Trung's room
+    .row.row-cols-3.reception
+        each doctor in doctors 
+            .col.border.d-flex.flex-column.justify-content-center.align-items-center.reception-doctor
+                p Doctor #{doctor.name}
+                p Slot : #{doctor.patients.length} / #{doctor.slotMax} 
+                if doctor.slotMax == doctor.patients.length
+                    span.badge.bg-danger FULL
+
+    button.btn.btn-primary.my-3#next-patient Next
+    div
+        h2 Patients
+        table.table
+            thead
+                tr
+                    th(scope='col') Number
+                    th(scope='col') Name
+                    th(scope='col') Age
+                    th(scope='col') Address
+                    th(scope='col') Diease
+            tbody
+                each patient, idx in receptionPatients
+                    tr 
+                        th(scope='row')= idx+1
+                        td= patient.name
+                        td= patient.age
+                        td= patient.address
+                        td= patient.disease
