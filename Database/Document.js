@@ -40,13 +40,28 @@ class Document {
     }
 
     readToFile() {
-        this.documentData = JSON.parse(
-            readFileSync(this.source, {encoding: "utf8"})
-        );
+        return new Promise((resolve, reject) => {
+            let data = "";
+            const readerStream = fs.createReadStream(this.source, {encoding: 'utf8'});
+
+            readerStream.on('data', (chunk) => {
+                data += chunk;
+            }).on('end', () => {
+                this.documentData = JSON.parse(data);
+                resolve();
+            })
+        })
     }
 
     writeToFile(data) {
         writeFileSync(this.source, JSON.stringify(this.documentData, null, 2));
+        // return new Promise((resolve, reject) => {
+        //     const writeStream = fs.createWriteStream(this.source, {encoding: 'utf8'});
+        //     console.log(this.documentData);
+        //     console.log(typeof this.documentData);
+        //     // writeStream.write(JSON.stringify(this.documentData, null, 2));
+        //     // writeStream.end(() => resolve());
+        // })
     }
 
     get allData() {

@@ -11,7 +11,10 @@ block content
                 if doctor.slotMax == doctor.patients.length
                     span.badge.bg-danger FULL
 
-    button.btn.btn-primary.my-3#next-patient Next
+    if receptionPatients.length > 0
+        button.btn.btn-primary.my-3#next-patient Next
+    else
+        button.btn.btn-primary.my-3(disabled)#next-patient Next
     div
         h2 Patients
         table.table

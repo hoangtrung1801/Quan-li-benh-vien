@@ -14,7 +14,6 @@ module.exports.getPage = async (req, res) => {
             ? 1
             : -1;
     });
-    console.log(res.locals);
 
     res.render("reception", {
         doctors,

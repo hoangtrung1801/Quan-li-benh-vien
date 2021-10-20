@@ -8,16 +8,15 @@ module.exports.getPageListDoctor = async (req, res) => {
 };
 
 module.exports.getPageDoctor = async (req, res) => {
-    const { idDoctor } = req.params;
+    const {idDoctor} = req.params;
     const doctor = await Doctor.findById(idDoctor);
-    console.log(doctor);
     res.render("doctor-room", {
         doctor,
     });
 };
 
 module.exports.donePatient = async (req, res) => {
-    const { idDoctor } = req.params;
+    const {idDoctor} = req.params;
 
     const doctor = await Doctor.findById(idDoctor);
     doctor.patients.shift();
