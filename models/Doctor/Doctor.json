@@ -158,24 +158,24 @@
     "specializedId": "7)51605pr9rl2i{d",
     "patients": [
       {
-        "name": "tim mach 1",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "e1t24{ig2sgr8160",
-        "date": 1634835357184,
-        "priority": "1",
-        "disease": "Nhồi máu cơ tim",
-        "id": "u9p4lr46Ctzr6xty"
-      },
-      {
-        "name": "tim mach 2",
+        "name": "test",
         "age": "12",
         "address": "650 Trần Cao Vân",
-        "diseaseId": "e1t24{ig2sgr8160",
-        "date": 1634835367389,
-        "priority": "1",
-        "disease": "Nhồi máu cơ tim",
-        "id": "e2aaicpk3reCpt{n"
+        "diseaseId": "s5l)4reeux4e)r02",
+        "date": 1634917768612,
+        "priority": "5",
+        "disease": "Đau tim nhẹ",
+        "id": "9c(u{2p01oot7kw2"
+      },
+      {
+        "name": "test",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "s5l)4reeux4e)r02",
+        "date": 1634917810231,
+        "priority": "5",
+        "disease": "Đau tim nhẹ",
+        "id": "1e4yzUte56bC.C68"
       }
     ],
     "id": "a385wstl5aa56U4r"
