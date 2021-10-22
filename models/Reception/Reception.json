@@ -1,83 +1,22 @@
 [
   {
-    "name": "A",
+    "name": "chan thuong",
     "age": "12",
     "address": "650 Trần Cao Vân",
-    "diseaseId": "139vmr641pn3clp9",
-    "priority": "5",
-    "disease": "Covid 19",
-    "id": "U483{a1478ladUja"
+    "diseaseId": "a1dh2ral6xpn34ya",
+    "date": 1634875648978,
+    "priority": "1",
+    "disease": "Chấn thương sọ não",
+    "id": "57093U3zr3i0ce9s"
   },
   {
-    "name": "XXX",
-    "age": "12",
-    "address": "Thanh Khê",
-    "diseaseId": "c64elneU1k4393e6",
-    "priority": "6",
-    "disease": "Đục thủy tinh thể",
-    "id": "9mcum8r8iax4rh41"
-  },
-  {
-    "name": "AA",
+    "name": "tim mach",
     "age": "12",
     "address": "650 Trần Cao Vân",
-    "diseaseId": "c64elneU1k4393e6",
-    "priority": "6",
-    "disease": "Đục thủy tinh thể",
-    "id": ".7405uUs8rstr2k6"
-  },
-  {
-    "name": "Lê Kim Hoàng Trung",
-    "age": "12",
-    "address": "650 Trần Cao Vân",
-    "diseaseId": "kewtC6rtsza3b758",
-    "priority": "15",
-    "disease": "Đau mắt đỏ",
-    "id": "ea.9w1l16a{k7U21"
-  },
-  {
-    "name": "ZZ",
-    "age": "12",
-    "address": "Thanh Khê",
-    "diseaseId": "kewtC6rtsza3b758",
-    "priority": "15",
-    "disease": "Đau mắt đỏ",
-    "id": "1U0p7qxcij4oqrev"
-  },
-  {
-    "name": "CC",
-    "age": "12",
-    "address": "đà nẵng",
-    "diseaseId": "kewtC6rtsza3b758",
-    "priority": "15",
-    "disease": "Đau mắt đỏ",
-    "id": "e708772cuy1w8t6k"
-  },
-  {
-    "name": "K",
-    "age": 75,
-    "address": "123 ho chi minh",
     "diseaseId": "e1t24{ig2sgr8160",
+    "date": 1634875656441,
     "priority": "1",
     "disease": "Nhồi máu cơ tim",
-    "id": "eq7815w3Ute4lra7"
-  },
-  {
-    "name": "B",
-    "age": "12",
-    "address": "650 Trần Cao Vân",
-    "diseaseId": "laepU21oe7ixbw34",
-    "priority": "19",
-    "disease": "Viêm amidan",
-    "id": "n37e389adlvcaa7e"
-  },
-  {
-    "name": "VV",
-    "age": "12",
-    "address": "a",
-    "diseaseId": "e1t24{ig2sgr8160",
-    "priority": "1",
-    "disease": "Nhồi máu cơ tim",
-    "id": "e7ea54pbr8op)338"
+    "id": "px9fk3tg3f7wxw3k"
   }
 ]

@@ -5,12 +5,18 @@ const Lobby = require("../models/Lobby/Lobby");
 module.exports.getPage = async (req, res) => {
     const diseases = await Diseases.allData;
     const lobbyPatients = await Lobby.allData;
+    const showPatients = lobbyPatients.slice(0, 3).sort((a, b) => {
+        if (a.priority === b.priority)
+            return a.date > b.date ? 1 : -1;
+        return parseInt(a.priority) > parseInt(b.priority) ? 1 : -1;
+    })
 
     res.locals.warning = req.query.warning;
 
     res.render("lobby", {
         diseases,
         lobbyPatients,
+        showPatients
     });
 };
 

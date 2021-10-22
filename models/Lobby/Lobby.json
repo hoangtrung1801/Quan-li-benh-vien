@@ -1,47 +1,22 @@
 [
   {
-    "name": "zzz",
-    "age": "12",
-    "address": "650 Trần Cao Vân",
-    "diseaseId": "s5l)4reeux4e)r02",
-    "priority": "5",
-    "disease": "Đau tim nhẹ",
-    "id": "tesdeU3g4ee{ef04"
-  },
-  {
-    "name": "asd",
+    "name": "j",
     "age": "12",
     "address": "Thanh Khê",
-    "diseaseId": "s5l)4reeux4e)r02",
-    "priority": "5",
-    "disease": "Đau tim nhẹ",
-    "id": "grpuj2vq8(}zhw1e"
-  },
-  {
-    "name": "asd",
-    "age": "12",
-    "address": "12",
-    "diseaseId": "c64elneU1k4393e6",
-    "priority": "6",
-    "disease": "Đục thủy tinh thể",
-    "id": "etev}35ca69t8jer"
-  },
-  {
-    "name": "ggg",
-    "age": "12",
-    "address": "650 Trần Cao Vân",
     "diseaseId": "kewtC6rtsza3b758",
+    "date": 1634871162798,
     "priority": "15",
     "disease": "Đau mắt đỏ",
-    "id": "o.9919e1e9d5k)re"
+    "id": "5urrr68l81.6{45b"
   },
   {
-    "name": "zxc",
+    "name": "l",
     "age": "12",
-    "address": "asd",
-    "diseaseId": "kewtC6rtsza3b758",
-    "priority": "15",
-    "disease": "Đau mắt đỏ",
-    "id": "3C{1i532rm7tf7m5"
+    "address": "Thanh Khê",
+    "diseaseId": "laepU21oe7ixbw34",
+    "date": 1634871175610,
+    "priority": "19",
+    "disease": "Viêm amidan",
+    "id": "r8y7f6}89j33pee9"
   }
 ]

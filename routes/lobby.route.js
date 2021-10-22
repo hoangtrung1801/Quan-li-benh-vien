@@ -11,7 +11,7 @@ const router = express.Router();
 
 /* GET home page. */
 router.get("/", checkReceptionFull, getPage);
-router.post("/submit", medicalRegisterValidate, checkIn, getPage);
+router.post("/submit", medicalRegisterValidate, checkIn);
 router.post("/", nextPatient);
 
 module.exports = router;

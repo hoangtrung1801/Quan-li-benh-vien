@@ -7,7 +7,11 @@ module.exports = (req, res, next) => {
     else if (!req.body.address) warning = "Required address";
     else if (!req.body.diseaseId) warning = "Required disease";
 
-    res.locals.warning = warning;
+    if (warning) {
+        res.locals.warning = warning;
+    } else {
+        req.body.date = new Date().getTime();
+    }
 
     next();
 }

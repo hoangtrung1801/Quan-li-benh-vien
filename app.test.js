@@ -1,35 +1,25 @@
-const Lobby = require("./models/Lobby/Lobby");
-const Doctor = require("./models/Doctor/Doctor");
 const Diseases = require("./models/Diseases/Diseases");
+const QueueDocument = require('./Database/QueueDocument');
+const Lobby = require('./models/Lobby/Lobby');
+const Reception = require("./models/Reception/Reception");
+const Doctor = require("./models/Doctor/Doctor");
+
 module.exports = async () => {
-    // for (let i = 65; i <= 75; i++) {
+    // const patients = await Reception.allData;
+    // const doctors = await Doctor.allData;
 
+    // for (let patient of patients) {
+    //     const specializedDiseaseId = (await Diseases.findById(patient.diseaseId)).specializedId;
+    //     let doctor = doctors.reduce((prev, cur) => {
+    //         if (cur.patients.length >= cur.slotMax) return prev;
+    //         if (cur.specializedId !== specializedDiseaseId) return prev;
 
-    //     let name = String.fromCharCode(i);
-    //     let age = i;
-    //     let address = '123 ho chi minh';
-    //     let diseaseId = 'e1t24{ig2sgr8160';
-    //     let patient = {
-    //         name, age, address, diseaseId
-    //     }
-    //     const disease = await Diseases.findById(patient.diseaseId);
-    //     patient.priority = disease.priority;
-    //     patient.disease = disease.name;
+    //         if (!Object.keys(prev).length) return cur;
+    //         if (cur.slotMax - cur.patients.length < prev.slotMax - prev.patients.length) return cur;
+    //         else return prev;
+    //     }, {})
 
-
-    //     await Lobby.push(patient);
+    //     if (!Object.keys(doctor).length) console.log('not suitable');
+    //     else console.log(patient, 'with', doctor, '----------');
     // }
 };
-
-function upperBound(arr, data) {
-    let lo = 0,
-        hi = arr.length - 1,
-        mid;
-    while (lo < hi) {
-        mid = (lo + hi) >>> 1;
-        if (arr[mid].priority <= data.priority) lo = mid + 1;
-        else hi = mid;
-    }
-    if (arr[lo].priority <= data.priority) return -1;
-    return lo;
-}

@@ -22,38 +22,34 @@ module.exports.getPage = async (req, res) => {
 };
 
 module.exports.nextPatient = async (req, res, next) => {
+    res.locals.notifies = [];
+
+    const patients = await Reception.allData;
     const doctors = await Doctor.allData;
 
-    const patient = await Reception.pop_front();
-    const specializedDiseaseId = (await Diseases.findById(patient.diseaseId))
-        .specializedId;
-    const doctor = doctors
-        .filter((doctor) => {
-            if (doctor.patients.length >= doctor.slotMax) return false;
-            return doctor.specializedId === specializedDiseaseId;
-        }) // filter
-        .sort((a, b) => {
-            if (a.slotMax - a.patients.length <= 0) return 1;
-            if (b.slotMax - b.patients.length <= 0) return -1;
-            return a.slotMax - a.patients.length > b.slotMax - b.patients.length
-                ? 1
-                : -1;
-        })[0]; // sort
-    // reduce for good performance
+    for (let i = 0; i < patients.length; i++) {
+        let patient = patients[i];
+        const specializedDiseaseId = (await Diseases.findById(patient.diseaseId)).specializedId;
+        let doctor = doctors.reduce((prev, cur) => {
+            if (cur.patients.length >= cur.slotMax) return prev;
+            if (cur.specializedId !== specializedDiseaseId) return prev;
 
-    try {
-        if (!doctor) {
-            console.log(`${patient.name} can not find suitable doctor`)
-            res.locals.notifies = [`${patient.name}, please keep in waiting`];
-            await Reception.create(patient);
+            if (!Object.keys(prev).length) return cur;
+            if (cur.slotMax - cur.patients.length < prev.slotMax - prev.patients.length) return cur;
+            else return prev;
+        }, {})
+
+
+        if (!Object.keys(doctor).length) {
+            res.locals.notifies.push(`${patient.name}, please keep in waiting`);
+            // await Reception.create(patient); // fix
         } else {
-            console.log(`${patient.name} go to doctor ${doctor.name}}`);
-            res.locals.notifies = [`${patient.name}, please move to ${doctor.name}'s room`];
+            res.locals.notifies.push(`${patient.name}, please move to ${doctor.name}'s room`);
+
+            await Reception.delete(patient.id);
             doctor.patients.push(patient);
             await Doctor.update(doctor.id, doctor);
         }
-    } catch (e) {
-        console.log(`Error in reception : ${e}`);
     }
 
     next();

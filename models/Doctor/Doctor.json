@@ -3,7 +3,28 @@
     "name": "Trung",
     "slotMax": "2",
     "specializedId": "9ae).3kf}ee1u7)t",
-    "patients": [],
+    "patients": [
+      {
+        "name": "chan thuong 1",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "a1dh2ral6xpn34ya",
+        "date": 1634835064939,
+        "priority": "1",
+        "disease": "Chấn thương sọ não",
+        "id": "6e1)7rpt35tr64j{"
+      },
+      {
+        "name": "chan thuong 2",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "a1dh2ral6xpn34ya",
+        "date": 1634835072485,
+        "priority": "1",
+        "disease": "Chấn thương sọ não",
+        "id": "reof8.aecUu0xz9i"
+      }
+    ],
     "id": "ooer024x0pquw}ir"
   },
   {
@@ -12,13 +33,24 @@
     "specializedId": "9ae).3kf}ee1u7)t",
     "patients": [
       {
-        "name": "XX",
+        "name": "chan thuong 3",
         "age": "12",
-        "address": "Thanh Khê",
+        "address": "650 Trần Cao Vân",
         "diseaseId": "a1dh2ral6xpn34ya",
+        "date": 1634871097758,
         "priority": "1",
         "disease": "Chấn thương sọ não",
-        "id": "81(6e554u9935}y7"
+        "id": "t9jr92ea.92ep{0z"
+      },
+      {
+        "name": "chan thuong",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "a1dh2ral6xpn34ya",
+        "date": 1634875629170,
+        "priority": "1",
+        "disease": "Chấn thương sọ não",
+        "id": "5e16rq2U86eae6pz"
       }
     ],
     "id": "(5kty1pnsj33z828"
@@ -29,13 +61,24 @@
     "specializedId": "rw6oeqrlk{i6ptj0",
     "patients": [
       {
-        "name": "Lê Kim Hoàng Trung",
+        "name": "tai mui hong 1",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "139vmr641pn3clp9",
+        "date": 1634871169894,
+        "priority": "5",
+        "disease": "Covid 19",
+        "id": "seapphk)e2eotg4p"
+      },
+      {
+        "name": "tai mui hong",
         "age": "12",
         "address": "650 Trần Cao Vân",
-        "diseaseId": "u8.owxb1d958mot{",
-        "priority": "20",
-        "disease": "Cảm xoàn",
-        "id": "8Uek1d74rsebraay"
+        "diseaseId": "139vmr641pn3clp9",
+        "date": 1634875682672,
+        "priority": "5",
+        "disease": "Covid 19",
+        "id": "4q9i5eplrxhrr89o"
       }
     ],
     "id": "s6zxbge4jzas3398"
@@ -51,35 +94,7 @@
     "name": "Trường",
     "slotMax": "3",
     "specializedId": "710s827d2xtg8r3i",
-    "patients": [
-      {
-        "name": "ZZZ",
-        "age": "12",
-        "address": "đà nẵng",
-        "diseaseId": "kewtC6rtsza3b758",
-        "priority": "15",
-        "disease": "Đau mắt đỏ",
-        "id": "28d6}5pad8weegl4"
-      },
-      {
-        "name": "AA",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "c64elneU1k4393e6",
-        "priority": "6",
-        "disease": "Đục thủy tinh thể",
-        "id": "68784Cax5t)43shu"
-      },
-      {
-        "name": "AAA",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "t)t2Ujt537l0e{8z",
-        "priority": "3",
-        "disease": "Tăng nhãn áp",
-        "id": "55pvj{o6e(sess{n"
-      }
-    ],
+    "patients": [],
     "id": "2z1l4{f9qkvra7ll"
   },
   {
@@ -95,22 +110,44 @@
     "specializedId": "7)51605pr9rl2i{d",
     "patients": [
       {
-        "name": "I",
-        "age": 73,
-        "address": "123 ho chi minh",
+        "name": "tim mach 3",
+        "age": "12",
+        "address": "Thanh Khê",
         "diseaseId": "e1t24{ig2sgr8160",
+        "date": 1634871128628,
         "priority": "1",
         "disease": "Nhồi máu cơ tim",
-        "id": "wl5C448w9r9hft(7"
+        "id": "43ueapc3f434mp06"
       },
       {
-        "name": "J",
-        "age": 74,
-        "address": "123 ho chi minh",
-        "diseaseId": "e1t24{ig2sgr8160",
-        "priority": "1",
-        "disease": "Nhồi máu cơ tim",
-        "id": ".is94j4o}n61xbl9"
+        "name": "tim mach 4",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "s5l)4reeux4e)r02",
+        "date": 1634871108655,
+        "priority": "5",
+        "disease": "Đau tim nhẹ",
+        "id": "Usp2hp)aat17sn}c"
+      },
+      {
+        "name": "tim mach 5",
+        "age": "12",
+        "address": "Thanh Khê",
+        "diseaseId": "cp6}dd5353npm7C0",
+        "date": 1634871117297,
+        "priority": "15",
+        "disease": "Hở van tim",
+        "id": "pepw7n4ot{z3879a"
+      },
+      {
+        "name": "tim mach 6",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "q883{5jeyi7cCh90",
+        "date": 1634870519341,
+        "priority": "17",
+        "disease": "Đái tháo đường",
+        "id": "u(e96psfet738ok1"
       }
     ],
     "id": "kwt60t21{}b5woCu"
@@ -121,22 +158,24 @@
     "specializedId": "7)51605pr9rl2i{d",
     "patients": [
       {
-        "name": "Z",
+        "name": "tim mach 1",
         "age": "12",
         "address": "Thanh Khê",
         "diseaseId": "e1t24{ig2sgr8160",
+        "date": 1634835357184,
         "priority": "1",
         "disease": "Nhồi máu cơ tim",
-        "id": "nee3rnv65(3neUar"
+        "id": "u9p4lr46Ctzr6xty"
       },
       {
-        "name": "C",
+        "name": "tim mach 2",
         "age": "12",
         "address": "650 Trần Cao Vân",
         "diseaseId": "e1t24{ig2sgr8160",
+        "date": 1634835367389,
         "priority": "1",
         "disease": "Nhồi máu cơ tim",
-        "id": "oop)c}dmbtr)k2gn"
+        "id": "e2aaicpk3reCpt{n"
       }
     ],
     "id": "a385wstl5aa56U4r"

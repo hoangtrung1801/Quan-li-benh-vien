@@ -46,10 +46,13 @@ block content
                     th(scope='col') Address
                     th(scope='col') Diease
             tbody
-                each patient, idx in lobbyPatients
+                each patient, idx in showPatients
                     tr 
                         th(scope='row')= idx+1
                         td= patient.name
                         td= patient.age
                         td= patient.address
                         td= patient.disease
+
+        if lobbyPatients.length - showPatients.length > 0 
+            p and #{lobbyPatients.length - showPatients.length} others ...
