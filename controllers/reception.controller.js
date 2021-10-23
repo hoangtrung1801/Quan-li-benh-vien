@@ -7,6 +7,7 @@ module.exports.getPage = async (req, res) => {
     let doctors = await Doctor.allData;
     const receptionPatients = await Reception.allData;
 
+    // sort list doctor in order incrementing of number of rest slot
     doctors.sort((a, b) => {
         if (a.slotMax - a.patients.length <= 0) return 1;
         if (b.slotMax - b.patients.length <= 0) return -1;
@@ -27,13 +28,17 @@ module.exports.nextPatient = async (req, res, next) => {
     const patients = await Reception.allData;
     const doctors = await Doctor.allData;
 
+    // each patient find suitable doctor
     for (let i = 0; i < patients.length; i++) {
         let patient = patients[i];
         const specializedDiseaseId = (await Diseases.findById(patient.diseaseId)).specializedId;
+
         let doctor = doctors.reduce((prev, cur) => {
+            // check doctor have slot enough ? , the same specialized ? 
             if (cur.patients.length >= cur.slotMax) return prev;
             if (cur.specializedId !== specializedDiseaseId) return prev;
 
+            // 
             if (!Object.keys(prev).length) return cur;
             if (cur.slotMax - cur.patients.length < prev.slotMax - prev.patients.length) return cur;
             else return prev;
@@ -42,11 +47,11 @@ module.exports.nextPatient = async (req, res, next) => {
 
         if (!Object.keys(doctor).length) {
             res.locals.notifies.push(`${patient.name}, please keep in waiting`);
-            // await Reception.create(patient); // fix
         } else {
             res.locals.notifies.push(`${patient.name}, please move to ${doctor.name}'s room`);
 
             await Reception.delete(patient.id);
+
             doctor.patients.push(patient);
             await Doctor.update(doctor.id, doctor);
         }

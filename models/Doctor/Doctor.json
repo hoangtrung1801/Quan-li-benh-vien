@@ -3,28 +3,7 @@
     "name": "Trung",
     "slotMax": "2",
     "specializedId": "9ae).3kf}ee1u7)t",
-    "patients": [
-      {
-        "name": "chan thuong 1",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "a1dh2ral6xpn34ya",
-        "date": 1634835064939,
-        "priority": "1",
-        "disease": "Chấn thương sọ não",
-        "id": "6e1)7rpt35tr64j{"
-      },
-      {
-        "name": "chan thuong 2",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "a1dh2ral6xpn34ya",
-        "date": 1634835072485,
-        "priority": "1",
-        "disease": "Chấn thương sọ não",
-        "id": "reof8.aecUu0xz9i"
-      }
-    ],
+    "patients": [],
     "id": "ooer024x0pquw}ir"
   },
   {
@@ -101,7 +80,18 @@
     "name": "Minh",
     "slotMax": "2",
     "specializedId": "710s827d2xtg8r3i",
-    "patients": [],
+    "patients": [
+      {
+        "name": "d",
+        "age": "12",
+        "address": "650 Trần Cao Vân",
+        "diseaseId": "c64elneU1k4393e6",
+        "date": 1634960447110,
+        "priority": "6",
+        "disease": "Đục thủy tinh thể",
+        "id": "2t5ml.3)2t444eUj"
+      }
+    ],
     "id": "se4h6)twg91rjstn"
   },
   {
@@ -110,44 +100,34 @@
     "specializedId": "7)51605pr9rl2i{d",
     "patients": [
       {
-        "name": "tim mach 3",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "e1t24{ig2sgr8160",
-        "date": 1634871128628,
-        "priority": "1",
-        "disease": "Nhồi máu cơ tim",
-        "id": "43ueapc3f434mp06"
-      },
-      {
-        "name": "tim mach 4",
+        "name": "test",
         "age": "12",
         "address": "650 Trần Cao Vân",
         "diseaseId": "s5l)4reeux4e)r02",
-        "date": 1634871108655,
+        "date": 1634917828998,
         "priority": "5",
         "disease": "Đau tim nhẹ",
-        "id": "Usp2hp)aat17sn}c"
+        "id": "3{dlxuee5e8x{tw)"
       },
       {
-        "name": "tim mach 5",
+        "name": "a",
         "age": "12",
         "address": "Thanh Khê",
-        "diseaseId": "cp6}dd5353npm7C0",
-        "date": 1634871117297,
-        "priority": "15",
-        "disease": "Hở van tim",
-        "id": "pepw7n4ot{z3879a"
+        "diseaseId": "e1t24{ig2sgr8160",
+        "date": 1634960312063,
+        "priority": "1",
+        "disease": "Nhồi máu cơ tim",
+        "id": "r830etoeri9a0x5e"
       },
       {
-        "name": "tim mach 6",
+        "name": "b",
         "age": "12",
         "address": "650 Trần Cao Vân",
-        "diseaseId": "q883{5jeyi7cCh90",
-        "date": 1634870519341,
-        "priority": "17",
-        "disease": "Đái tháo đường",
-        "id": "u(e96psfet738ok1"
+        "diseaseId": "s5l)4reeux4e)r02",
+        "date": 1634960324524,
+        "priority": "5",
+        "disease": "Đau tim nhẹ",
+        "id": "fe6ar7)64s648ort"
       }
     ],
     "id": "kwt60t21{}b5woCu"

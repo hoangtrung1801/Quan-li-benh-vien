@@ -14,6 +14,7 @@ const {readFileSync, writeFileSync} = fs;
     + delete(id) -> delete data out of document
     + pop_front() -> delete data on the top and that data
     + pop_back() -> delete data on the last and return that data
+    + isEmpty() -> check if document has no data, return true, else return false
 
     id: auto generate 
 */
@@ -28,11 +29,11 @@ class Document {
                 this.readToFile();
             } catch {
                 this.documentData = [];
-                this.writeToFile();
+                this.writeToFile(this.documentData);
             }
         } else {
             this.documentData = [];
-            writeFileSync(this.source, "[]");
+            this.writeToFile(this.documentData);
         }
     }
 
@@ -54,7 +55,12 @@ class Document {
         return new Promise((resolve, reject) => {
             const writeStream = fs.createWriteStream(this.source, {encoding: 'utf8'});
 
-            writeStream.write(JSON.stringify(this.documentData, null, 2));
+            if (data) {
+                writeStream.write(JSON.stringify(data, null, 2));
+            } else {
+                writeStream.write(JSON.stringify(this.documentData, null, 2));
+            }
+
             writeStream.end();
             writeStream.on('finish', () => {
                 resolve();
@@ -75,6 +81,7 @@ class Document {
                 if (!data.id) {
                     data.id = generateId();
                 }
+
                 await this.readToFile();
                 this.documentData.push(data);
                 await this.writeToFile();
@@ -107,9 +114,11 @@ class Document {
                     !Array.isArray(newData)
                 ) {
                     await this.readToFile();
+
                     let oldData = this.documentData.find(
                         (dataEl) => dataEl.id === docId
                     );
+                    // deep copy object from oldData to newData
                     changeDataInObjects(newData, oldData);
 
                     await this.writeToFile();

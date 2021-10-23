@@ -6,7 +6,6 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
 const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/users");
 const lobbyRouter = require("./routes/lobby.route");
 const receptionRouter = require("./routes/reception.route");
 const doctorRoomRouter = require("./routes/doctor-room.route");
@@ -24,21 +23,22 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// route
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
 app.use("/lobby", lobbyRouter);
 app.use("/reception", receptionRouter);
 app.use("/doctor-room", doctorRoomRouter);
 
+// admin for management
 app.use("/admin", adminRouter);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+app.use(function (_req, _res, next) {
     next(createError(404))
 });
 
 // error handler
-app.use(function (err, req, res, next) {
+app.use(function (err, req, res, _next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get("env") === "development" ? err : {};

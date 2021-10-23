@@ -20,6 +20,7 @@ module.exports.donePatient = async (req, res) => {
 
     const doctor = await Doctor.findById(idDoctor);
     doctor.patients.shift();
+
     await Doctor.update(idDoctor, doctor);
 
     res.redirect(`/doctor-room/${idDoctor}`);

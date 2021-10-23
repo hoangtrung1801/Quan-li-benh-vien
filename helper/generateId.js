@@ -1,6 +1,5 @@
 const letter = "abcdefghijklmnopqrstuvwxyz";
 const allCharacters = `${letter}1234567890123456789123456789{letter.toUpperCase()}`;
-// then i will split the allCharacters into an array like so
 const allCharactersInArray = allCharacters.split("");
 
 const idLength = 16;
