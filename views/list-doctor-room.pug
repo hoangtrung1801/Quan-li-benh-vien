@@ -2,10 +2,12 @@ extends layout
 
 block content
     h2 Doctor room
-    .doctor-room
+    .doctor-rooms
         ul.list-group
             each doctor in doctors
                 a(href='/doctor-room/'+doctor.id) 
                     li.list-group-item.d-flex.justify-content-between
                         span Doctor #{doctor.name}
                         span Slot : #{doctor.patients.length} / #{doctor.slotMax}
+block script 
+    script(src="/javascripts/list-doctor-room.js") 

@@ -1,0 +1,16 @@
+GET http://localhost:3000/api/lobby
+
+###
+
+POST http://localhost:3000/api/lobby HTTP/1.1
+Content-Type: application/json 
+
+{
+  "name": "x",
+  "age": "12",
+  "address": "Tran cao van",
+  "diseaseId": "a1dh2ral6xpn34ya",
+  "priority": "1",
+  "disease": "Chấn thương sọ não",
+  "id": "n6(kaw6fj.5a1r}p"
+}

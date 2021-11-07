@@ -2,12 +2,12 @@
     height: 200px;
 }
 
-.doctor-room li:hover {
+.doctor-rooms li:hover {
     background-color: #ddd;
     cursor: pointer;
 }
 
-.doctor-room a {
+.doctor-rooms a {
     color: currentColor;
     text-decoration: none;
 }

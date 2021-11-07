@@ -1,22 +1,17 @@
-const nextLobby = document.querySelector("#next-lobby");
-const donePatient = document.querySelector("#done-patient");
-const nextPatient = document.querySelector('#next-patient')
+const socket = io();
+const notifiesDiv = document.querySelector('#notifies');
 
-if (nextLobby) {
-    nextLobby.addEventListener("click", () => {
-        alert("Patient was moved in reception");
-        post('/lobby');
-    });
-}
+const showNotifies = (notifies) => {
+    notifies.map(notify => {
+        let alert = document.createElement('div');
+        alert.className = 'alert alert-info';
+        alert.textContent = notify;
 
-if (donePatient) {
-    donePatient.addEventListener("click", () => {
-        alert("Congratulation! Patient was healed");
-    });
-}
-
-if (nextPatient) {
-    nextPatient.addEventListener('click', () => post('/reception'));
+        notifiesDiv.appendChild(alert);
+        setTimeout(() => {
+            notifiesDiv.removeChild(alert);
+        }, 5000);
+    })
 }
 
 // prevent resubmition
@@ -44,4 +39,3 @@ function post(path, params = {}, method = 'post') {
     document.body.appendChild(form);
     form.submit();
 }
-

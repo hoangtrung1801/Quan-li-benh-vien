@@ -2,7 +2,7 @@ extends layout
 
 block content
     h2 Reception
-    .row.row-cols-3.reception
+    .row.row-cols-3.reception#list-doctors
         each doctor in doctors 
             .col.border.d-flex.flex-column.justify-content-center.align-items-center.reception-doctor
                 p Doctor #{doctor.name}
@@ -10,10 +10,10 @@ block content
                 if doctor.slotMax == doctor.patients.length
                     span.badge.bg-danger FULL
 
-    if receptionPatients.length > 0
-        button.btn.btn-primary.my-3#next-patient Next
-    else
-        button.btn.btn-primary.my-3(disabled)#next-patient Next
+    //- if receptionPatients.length > 0
+    button.btn.btn-primary.my-3#next-reception Next
+    //- else
+        button.btn.btn-primary.my-3(disabled)#next-reception Next
     div
         h2 Patients
         table.table
@@ -24,7 +24,7 @@ block content
                     th(scope='col') Age
                     th(scope='col') Address
                     th(scope='col') Diease
-            tbody
+            tbody#list-patients
                 each patient, idx in receptionPatients
                     tr 
                         th(scope='row')= idx+1
@@ -32,3 +32,6 @@ block content
                         td= patient.age
                         td= patient.address
                         td= patient.disease
+
+block script 
+    script(src="/javascripts/reception.js") 

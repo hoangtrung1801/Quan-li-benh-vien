@@ -2,13 +2,12 @@ extends layout
 
 block content
     h2 Doctor #{doctor.name} 
-    if doctor.patients.length > 0
-        .alert.alert-info(role='alert') Doctor is healing for #{doctor.patients[0].name}
+    .alert.alert-info(role='alert')#patient-is-healing
 
     if doctor.patients.length == 0 
-        a.btn.btn-primary.disabled#done-patient(href='/doctor-room/'+doctor.id+'/done' role="button" aria-disabled="true" tabindex="-1") Done
+        a.btn.btn-primary.disabled#done-patient Done
     else
-        a.btn.btn-primary#done-patient(href='/doctor-room/'+doctor.id+'/done' role="button" aria-disabled="true" tabindex="-1") Done
+        a.btn.btn-primary#done-patient Done
 
     div
         h2 Patients 
@@ -20,7 +19,7 @@ block content
                     th(scope='col') Age
                     th(scope='col') Address
                     th(scope='col') Diease
-            tbody
+            tbody#list-patients
                 each patient,idx in doctor.patients 
                     if idx == 0
                         tr.table-active
@@ -36,3 +35,6 @@ block content
                             td= patient.age
                             td= patient.address
                             td= patient.disease
+
+block script 
+    script(src="/javascripts/doctor-room.js") 

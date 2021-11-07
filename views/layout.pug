@@ -4,6 +4,7 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous")
+    script(src="/socket.io/socket.io.js") 
   body
     nav.navbar.navbar-expand-lg.navbar-light.bg.light
         .container-fluid
@@ -17,11 +18,13 @@ html
                     li.nav-item.me-3
                         a.nav-link(aria-current='page' href='/doctor-room') Doctor Room
     .container
-        if notifies
-            each notify in notifies 
-                .alert.alert-info= notify
-        if warning 
-            .alert.alert-danger= warning
+        #notifies
+            if notifies
+                each notify in notifies 
+                    .alert.alert-info= notify
+            if warning 
+                .alert.alert-danger= warning
         block content
 
+        block script 
         script(src='/javascripts/script.js')

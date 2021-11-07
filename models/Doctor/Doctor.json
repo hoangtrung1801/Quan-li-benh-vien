@@ -10,56 +10,14 @@
     "name": "Tâm",
     "slotMax": "2",
     "specializedId": "9ae).3kf}ee1u7)t",
-    "patients": [
-      {
-        "name": "chan thuong 3",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "a1dh2ral6xpn34ya",
-        "date": 1634871097758,
-        "priority": "1",
-        "disease": "Chấn thương sọ não",
-        "id": "t9jr92ea.92ep{0z"
-      },
-      {
-        "name": "chan thuong",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "a1dh2ral6xpn34ya",
-        "date": 1634875629170,
-        "priority": "1",
-        "disease": "Chấn thương sọ não",
-        "id": "5e16rq2U86eae6pz"
-      }
-    ],
+    "patients": [],
     "id": "(5kty1pnsj33z828"
   },
   {
     "name": "Lý",
     "slotMax": "3",
     "specializedId": "rw6oeqrlk{i6ptj0",
-    "patients": [
-      {
-        "name": "tai mui hong 1",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "139vmr641pn3clp9",
-        "date": 1634871169894,
-        "priority": "5",
-        "disease": "Covid 19",
-        "id": "seapphk)e2eotg4p"
-      },
-      {
-        "name": "tai mui hong",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "139vmr641pn3clp9",
-        "date": 1634875682672,
-        "priority": "5",
-        "disease": "Covid 19",
-        "id": "4q9i5eplrxhrr89o"
-      }
-    ],
+    "patients": [],
     "id": "s6zxbge4jzas3398"
   },
   {
@@ -73,25 +31,24 @@
     "name": "Trường",
     "slotMax": "3",
     "specializedId": "710s827d2xtg8r3i",
-    "patients": [],
+    "patients": [
+      {
+        "name": "asd",
+        "age": "12",
+        "address": "Tran cao van",
+        "diseaseId": "kewtC6rtsza3b758",
+        "priority": "15",
+        "disease": "Đau mắt đỏ",
+        "id": "8aps)tlUwaxpkkps"
+      }
+    ],
     "id": "2z1l4{f9qkvra7ll"
   },
   {
     "name": "Minh",
     "slotMax": "2",
     "specializedId": "710s827d2xtg8r3i",
-    "patients": [
-      {
-        "name": "d",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "c64elneU1k4393e6",
-        "date": 1634960447110,
-        "priority": "6",
-        "disease": "Đục thủy tinh thể",
-        "id": "2t5ml.3)2t444eUj"
-      }
-    ],
+    "patients": [],
     "id": "se4h6)twg91rjstn"
   },
   {
@@ -100,34 +57,13 @@
     "specializedId": "7)51605pr9rl2i{d",
     "patients": [
       {
-        "name": "test",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "s5l)4reeux4e)r02",
-        "date": 1634917828998,
-        "priority": "5",
-        "disease": "Đau tim nhẹ",
-        "id": "3{dlxuee5e8x{tw)"
-      },
-      {
-        "name": "a",
-        "age": "12",
-        "address": "Thanh Khê",
-        "diseaseId": "e1t24{ig2sgr8160",
-        "date": 1634960312063,
-        "priority": "1",
-        "disease": "Nhồi máu cơ tim",
-        "id": "r830etoeri9a0x5e"
-      },
-      {
         "name": "b",
         "age": "12",
-        "address": "650 Trần Cao Vân",
+        "address": "đà nẵng",
         "diseaseId": "s5l)4reeux4e)r02",
-        "date": 1634960324524,
         "priority": "5",
         "disease": "Đau tim nhẹ",
-        "id": "fe6ar7)64s648ort"
+        "id": "Udejl}6z7C141s2w"
       }
     ],
     "id": "kwt60t21{}b5woCu"
@@ -138,24 +74,13 @@
     "specializedId": "7)51605pr9rl2i{d",
     "patients": [
       {
-        "name": "test",
+        "name": "c",
         "age": "12",
-        "address": "650 Trần Cao Vân",
+        "address": "Tran cao van",
         "diseaseId": "s5l)4reeux4e)r02",
-        "date": 1634917768612,
         "priority": "5",
         "disease": "Đau tim nhẹ",
-        "id": "9c(u{2p01oot7kw2"
-      },
-      {
-        "name": "test",
-        "age": "12",
-        "address": "650 Trần Cao Vân",
-        "diseaseId": "s5l)4reeux4e)r02",
-        "date": 1634917810231,
-        "priority": "5",
-        "disease": "Đau tim nhẹ",
-        "id": "1e4yzUte56bC.C68"
+        "id": "sbsCm054z4og56bl"
       }
     ],
     "id": "a385wstl5aa56U4r"

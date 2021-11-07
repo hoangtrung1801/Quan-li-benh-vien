@@ -42,7 +42,7 @@ block content
                     th(scope='col') Age
                     th(scope='col') Address
                     th(scope='col') Diease
-            tbody
+            tbody#list-patients
                 each patient, idx in showPatients
                     tr 
                         th(scope='row')= idx+1
@@ -51,5 +51,10 @@ block content
                         td= patient.address
                         td= patient.disease
 
-        if lobbyPatients.length - showPatients.length > 0 
-            p and #{lobbyPatients.length - showPatients.length} others ...
+        //- if lobbyPatients.length - showPatients.length > 0 
+        //-     p and #{lobbyPatients.length - showPatients.length} others ...
+        p#another-patient and #{lobbyPatients.length - showPatients.length} others ...
+
+
+block script
+    script(src="/javascripts/lobby.js") 

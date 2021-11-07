@@ -1,4 +1,3 @@
-require('./app.test')();
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
@@ -10,6 +9,7 @@ const lobbyRouter = require("./routes/lobby.route");
 const receptionRouter = require("./routes/reception.route");
 const doctorRoomRouter = require("./routes/doctor-room.route");
 const adminRouter = require("./routes/admin.route");
+const apiRouter = require('./api/index');
 
 const app = express();
 
@@ -28,6 +28,8 @@ app.use("/", indexRouter);
 app.use("/lobby", lobbyRouter);
 app.use("/reception", receptionRouter);
 app.use("/doctor-room", doctorRoomRouter);
+
+app.use("/api", apiRouter);
 
 // admin for management
 app.use("/admin", adminRouter);
